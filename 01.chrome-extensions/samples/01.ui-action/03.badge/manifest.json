@@ -1,0 +1,8 @@
+{
+    "manifest_version": 3,
+    "version": "0.0.1",
+    "name": "badge demo",
+    "action": {
+        "default_popup": "./pages/popup/popup.html"
+    }
+}
