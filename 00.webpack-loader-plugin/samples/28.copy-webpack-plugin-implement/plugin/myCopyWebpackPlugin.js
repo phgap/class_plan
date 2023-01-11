@@ -47,7 +47,7 @@ class MyCopyWebpackPlugin {
             return;
         }
 
-        const glob = path.posix.join(
+        const glob = path.join(
             fastGlob.escapePath(normalizePath(path.resolve(from))),
             "**/*"
         );

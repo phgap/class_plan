@@ -3,7 +3,8 @@ const MyCopyWebpackPlugin = require('./plugin/myCopyWebpackPlugin');
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        clean: true
     },
     mode: 'production',
     // mode: 'development',
@@ -13,7 +14,7 @@ module.exports = {
         new MyCopyWebpackPlugin({
             patterns: [
                 { from: './assets/1.txt', to: 'assets' },
-                { from: './assets/2', to: 'assets' }
+                { from: './assets/2', to: 'assets/2' }
             ]
         })
     ]
