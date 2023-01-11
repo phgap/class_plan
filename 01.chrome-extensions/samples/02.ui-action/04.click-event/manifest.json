@@ -1,0 +1,9 @@
+{
+    "manifest_version": 3,
+    "version": "0.0.1",
+    "name": "04 click event demo",
+    "action": {},
+    "background": {
+        "service_worker": "background.js"
+    }
+}
