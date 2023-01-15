@@ -12,7 +12,7 @@ chrome.omnibox.onInputChanged.addListener((text, suggest) => {
     // description: 显示在推荐列表中的文本内容
     suggest([
         { content: `https://translate.google.com/?sl=en&tl=zh-CN&text=${text}&op=translate`, description: '谷歌翻译' },
-        { content: `https://fanyi.baidu.com/#en/zh/${text}`, description: '百度翻译' },
+        { content: `https://fanyi.baidu.com/#auto/zh/${text}`, description: '百度翻译' },
 
     ])
 })
