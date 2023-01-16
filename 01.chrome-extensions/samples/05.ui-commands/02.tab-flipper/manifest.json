@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "version": "0.0.1",
+    "name": "Tab Flipper",
+    "commands": {
+        "flip-tabs-backwards": {
+            "suggested_key": {
+                "mac": "Command+Shift+Left"
+            },
+            "description": "flip-tabs-backwords"
+        },
+        "flip-tabs-forward": {
+            "suggested_key": {
+                "mac": "Command+Shift+Right"
+            },
+            "description": "flip-tabs-forward"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}

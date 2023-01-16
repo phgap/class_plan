@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "version": "0.0.1",
+    "name": "Command Basic Usage",
+    "commands": {
+        "my_command": {
+            "suggested_key": {
+                "mac": "Command+Shift+O"
+            },
+            "description": "command basic usage"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}

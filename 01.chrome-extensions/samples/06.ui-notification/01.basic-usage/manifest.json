@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "version": "0.0.1",
+    "name": "notification basic usage",
+    "permissions": [
+        "notifications"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
