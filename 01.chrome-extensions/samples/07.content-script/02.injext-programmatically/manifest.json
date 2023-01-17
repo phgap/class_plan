@@ -1,13 +1,12 @@
 {
     "manifest_version": 3,
     "version": "0.0.1",
-    "name": "notification basic usage",
+    "name": "content script programmatically injection",
     "permissions": [
-        "notifications"
+        "scripting",
+        "activeTab"
     ],
-    "action": {
-        "default_popup": "popup.html"
-    },
+    "action": {},
     "background": {
         "service_worker": "bg.js"
     }

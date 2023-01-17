@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "version": "0.0.1",
+    "name": "Reading Time",
+    "content_scripts": [
+        {
+            "matches": ["https://developer.chrome.com/docs/extensions/*"],
+            "js": ["content-script.js"]
+        }
+    ],
+    "icons": {
+        "16": "images/icon-16.png"
+    }
+}

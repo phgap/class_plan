@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "version": "0.0.1",
+    "name": "content script static injection",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content-script.js"]
+        }
+    ]
+}
