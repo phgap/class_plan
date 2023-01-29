@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./popup.css" />
+</head>
+
+<body>
+    <template id="window-template">
+        <div class="window normal">
+            <div class="window-main">
+                <h3 class="window-title">newtab, extensions</h3>
+            </div>
+            <div class="window-actions">
+                <div class="icon add"></div>
+                <div class="icon minimize"></div>
+                <div class="icon close"></div>
+            </div>
+        </div>
+    </template>
+    <template id="tab-template">
+        <div class="tab highlighted"
+            style='background-image: url("https://developer.chrome.com/images/meta/favicon-32x32.png" );'>
+        </div>
+    </template>
+    <div class="header">
+        <div class="tab-info">4个窗口 共18个tab页</div>
+    </div>
+    <div class="window-container">
+        <div class="normal"></div>
+        <div class="split hidden">
+            <div class="split-div">
+                <span class="split-span">Minimized windows</span>
+            </div>
+        </div>
+        <div class="mini"></div>
+    </div>
+    <script src="./popup.js"></script>
+</body>
+
+</html>

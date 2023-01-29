@@ -1,0 +1,20 @@
+{
+  "name": "command-create",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "activationEvents": [
+    "onCommand:command-create.new-command-name"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "command-create.new-command-name",
+        "title": "new command created!!!"
+      }
+    ]
+  }
+}

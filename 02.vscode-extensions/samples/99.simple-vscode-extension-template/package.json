@@ -1,0 +1,26 @@
+{
+  "name": "~extension-name~",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "activationEvents": [
+    "onCommand:~extension-name~.~command-name~"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "~extension-name~.~command-name~",
+        "title": "~command-title~"
+      }
+    ]
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0"
+  }
+}

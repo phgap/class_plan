@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 800px;
+    height: 600px;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+body {
+    width: 400px;
+    height: 300px;
+    background-color: #f1f1f1;
+}
+
+.header {
+    height: 70px;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    display: block;
+}
+
+.header div {
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding-right: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 0;
+    border-radius: 0;
+    background: white;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* ----------------------------window container样式 */
+.window-container {
+    position: fixed;
+    left: 0;
+    top: 70px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.window {
+    border-top: none;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    width: auto;
+    display: inline-table;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    vertical-align: top;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 20%);
+}
+
+.window-main {
+    display: inline-block;
+}
+
+.window-title {
+    font-size: 12px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.tab {
+    float: left;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    box-sizing: border-box;
+    border: 1px solid #b2b2b2;
+    margin: 0.25rem;
+    border-radius: 3px;
+    background-size: 1rem 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.newliner {
+    clear: both;
+}
+
+.tab.highlighted {
+    border-color: purple;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 5%) inset, 0px 0px 4px rgb(102 51 153 / 60%);
+}
+
+.icon {
+    box-sizing: border-box;
+    height: 25px;
+    width: 25px;
+    margin: 0.25rem;
+    border-radius: 3px;
+    background-size: 1rem 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    float: left;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.add {
+    background-image: url(../images/add64.png);
+    background-color: transparent;
+    border: none;
+}
+
+.minimize {
+    background-image: url(../images/min64.png);
+    background-color: transparent;
+    border: none;
+}
+
+.close {
+    background-image: url(../images/close64.png);
+    background-color: transparent;
+    border: none;
+}
+
+.split {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    clear: both;
+}
+
+.split-div {
+    width: 100%;
+    height: 8px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.split-span {
+    font-size: 12px;
+    background-color: #F3F5F6;
+    color: #555;
+    padding: 0 10px;
+}
+
+.hidden {
+    display: none;
+}

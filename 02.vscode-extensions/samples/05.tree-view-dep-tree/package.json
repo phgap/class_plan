@@ -1,0 +1,51 @@
+{
+  "name": "node-dependencies",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "activationEvents": [],
+  "main": "./src/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "package-exploer",
+          "title": "Package Exploer",
+          "icon": "images/dep.svg"
+        }
+      ]
+    },
+    "views": {
+      "package-exploer": [
+        {
+          "id": "node-dependencies-view",
+          "name": "Node Dependencies View",
+          "icon": "images/dep.svg"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "node-dependencies-view",
+        "contents": "该工程没有Node依赖包"
+      }
+    ],
+    "commands": [
+      {
+        "command": "node-dependencies-view.openNpm",
+        "title": "open"
+      }
+    ],
+    "menus": {
+      "view/item/context": [
+        {
+          "command": "node-dependencies-view.openNpm",
+          "when": "view == node-dependencies-view",
+          "group": "inline"
+        }
+      ]
+    }
+  }
+}

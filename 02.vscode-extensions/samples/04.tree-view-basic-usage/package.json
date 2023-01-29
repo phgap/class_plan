@@ -1,0 +1,86 @@
+{
+  "name": "my-tree-view",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "activationEvents": [],
+  "main": "./src/extension.js",
+  "contributes": {
+    "viewsWelcome": [
+      {
+        "view": "myTreeView",
+        "contents": "没有数据"
+      }
+    ],
+    "commands": [
+      {
+        "command": "myTreeView.refresh",
+        "title": "Refresh",
+        "icon": {
+          "dark": "resources/dark/refresh.svg",
+          "light": "resources/light/refresh.svg"
+        }
+      },
+      {
+        "command": "myTreeView.titleInline",
+        "title": "titleInline"
+      },
+      {
+        "command": "myTreeView.item",
+        "title": "item"
+      },
+      {
+        "command": "myTreeView.itemInline",
+        "title": "itemInline"
+      },
+      {
+        "command": "myTreeView.itemSelected",
+        "title": "item selected"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "myTreeView.refresh",
+          "when": "view == myTreeView",
+          "group": "navigation"
+        },
+        {
+          "command": "myTreeView.titleInline",
+          "when": "view == myTreeView",
+          "group": "inline"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "myTreeView.item",
+          "when": "view == myTreeView"
+        },
+        {
+          "command": "myTreeView.itemInline",
+          "when": "view == myTreeView",
+          "group": "inline"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "package-explorer",
+          "title": "Package Explorer",
+          "icon": "media/dep.svg"
+        }
+      ]
+    },
+    "views": {
+      "package-explorer": [
+        {
+          "id": "myTreeView",
+          "name": "My Tree View"
+        }
+      ]
+    }
+  }
+}

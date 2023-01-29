@@ -1,0 +1,20 @@
+{
+  "name": "command-execute-with-arg",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "activationEvents": [
+    "onCommand:command-execute-with-arg.exec-with-arg"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "command-execute-with-arg.exec-with-arg",
+        "title": "exec with arg"
+      }
+    ]
+  }
+}

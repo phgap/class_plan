@@ -1,0 +1,16 @@
+.
+├── CHANGELOG.md
+├── README.md
+├── extension.js
+├── jsconfig.json
+├── package.json
+├── test
+│   ├── runTest.js
+│   └── suite
+│       ├── extension.test.js
+│       └── index.js
+├── tree.txt
+├── vsc-extension-quickstart.md
+└── yarn.lock
+
+2 directories, 11 files
