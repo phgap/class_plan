@@ -1,0 +1,25 @@
+{
+  "name": "my-binary-editor",
+  "version": "1.0.0",
+  "main": "src/extension.js",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "activationEvents": [
+    "onCustomEditor:my-binary-editor"
+  ],
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "my-binary-editor",
+        "displayName": "My Binary Editor",
+        "selector": [
+          {
+            "filenamePattern": "*.phgap"
+          }
+        ]
+      }
+    ]
+  }
+}
