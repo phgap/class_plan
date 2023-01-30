@@ -1,0 +1,25 @@
+{
+  "name": "07.custom-editor-text-based",
+  "version": "1.0.0",
+  "main": "src/extension.js",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "activationEvents": [
+    "onCustomEditor:my-text-editor"
+  ],
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "my-text-editor",
+        "displayName": "My Text Editor",
+        "selector": [
+          {
+            "filenamePattern": "*.phgap"
+          }
+        ]
+      }
+    ]
+  }
+}
