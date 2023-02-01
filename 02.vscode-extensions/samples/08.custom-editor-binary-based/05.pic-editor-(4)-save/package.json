@@ -1,0 +1,25 @@
+{
+  "name": "picture-editor",
+  "version": "1.0.0",
+  "main": "src/extension.js",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "activationEvents": [
+    "onCustomEditor:picture-editor"
+  ],
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "picture-editor",
+        "displayName": "Picture Editor",
+        "selector": [
+          {
+            "filenamePattern": "*.phgap"
+          }
+        ]
+      }
+    ]
+  }
+}
