@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example for CLS</title>
+    <style>
+        /* 将元素放大之后，产生位移使cls的计算结果更大 */
+        p {
+            font-size: 30px;
+            display: block;
+            height: 500px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <p>这是一段使用自定义字体的文本。</p>
+    <div></div>
+    <script>
+        setTimeout(() => {
+
+            const p = document.querySelector('p');
+            for (let i = 0; i < 5; i++) {
+                const div = document.createElement('div');
+                div.innerHTML = 'new item';
+                // insertBefore会影响到cls的计算
+                document.body.insertBefore(div, p);
+                // appendChild不会影响cls
+                // document.body.appendChild(div);
+            }
+        }, 2000)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+/* 使用自定义字体 */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('custom-font.woff2') format('woff2'),
+        url('custom-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 一些文本样式 */
+p {
+    font-size: 16px;
+    font-family: 'CustomFont', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 一些样式，可能会导致CLS */
+div {
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+}
